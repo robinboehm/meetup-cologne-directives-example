@@ -20,6 +20,7 @@
   "homepage": "https://github.com/robinboehm/meetup-cologne-directives-example",
   "devDependencies": {
     "karma": "^0.12.9",
+    "karma-chrome-launcher": "^0.1.3",
     "karma-jasmine": "^0.1.5",
     "karma-ng-html2js-preprocessor": "^0.1.0"
   }

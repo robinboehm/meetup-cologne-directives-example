@@ -14,8 +14,15 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
+      // Src
       'src/**/module.js',
-      'src/**/*.js'
+      'src/**/*.js',
+
+      // Test
+      'test/unit/**/*.js',
+
+      // Match all templates for nghtml2js
+      'src/**/*.html'
     ],
 
 
@@ -55,7 +62,7 @@ module.exports = function (config) {
     // - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // If browser does not capture in given timeout [ms], kill it
@@ -64,6 +71,17 @@ module.exports = function (config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: false,
+
+    // preprocess matching files before serving them to the browser
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    preprocessors: {
+      'src/**/*.html': 'ng-html2js'
+    },
+
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'src/',
+      moduleName: 'templates'
+    }
   });
 };
