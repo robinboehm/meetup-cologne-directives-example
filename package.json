@@ -1,0 +1,21 @@
+{
+  "name": "meetup-cologne-directives-example",
+  "version": "0.0.0",
+  "description": "meetup-cologne-directives-example =================================",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robinboehm/meetup-cologne-directives-example.git"
+  },
+  "author": "Robin Böhm<robin.boehm@angularjs.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinboehm/meetup-cologne-directives-example/issues"
+  },
+  "homepage": "https://github.com/robinboehm/meetup-cologne-directives-example"
+}
