@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/robinboehm/meetup-cologne-directives-example/issues"
   },
-  "homepage": "https://github.com/robinboehm/meetup-cologne-directives-example"
+  "homepage": "https://github.com/robinboehm/meetup-cologne-directives-example",
+  "devDependencies": {
+    "karma": "^0.12.9",
+    "karma-ng-html2js-preprocessor": "^0.1.0"
+  }
 }
